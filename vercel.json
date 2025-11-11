@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/main.cs": {
+      "runtime": "vercel-dotnet@3.0.0"
+    }
+  }
+}
