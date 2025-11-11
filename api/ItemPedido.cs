@@ -8,10 +8,10 @@ public class ItemPedido
     Produto = produto;
     Quantidade = quantidade;
   }
-  public double TotalItem => Produto.PrecoUnitario* Quantidade;
+  public double Subtotal => Produto.PrecoUnitario * Quantidade;
 
   public override string ToString()
   {
-    return $"{Produto.Nome} | Qtd: {Quantidade} | Total: R$ {TotalItem: F2}"  
-    }
+    return $"{Produto.Nome} | Qtd: {Quantidade} | Total: R$ {Subtotal:F2}";
+  }
 }

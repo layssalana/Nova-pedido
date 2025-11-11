@@ -1,14 +1,14 @@
 using System;
-using System.Collections.Generic
+using System.Collections.Generic;
 
 public class Pedido
 {
   public DateTime Data { get; private set; }
-  public cliente Cliente { get; private set; }
-  public Endereco EnderecoEntrega { get; private set; }
+  public Cliente Cliente { get; private set; }
+  public EnderecoEntrega EnderecoEntrega { get; private set; }
   public List<ItemPedido> Itens { get; private set; }
 
-  public Pedido(Cliente cliente, Endereco enderecoEntrega)
+  public Pedido(Cliente cliente, EnderecoEntrega enderecoEntrega)
   {
     Data = DateTime.Now;
     Cliente = cliente;
@@ -39,6 +39,6 @@ public class Pedido
       resultado += "   " + item + "\n";
     }
     resultado += $"Valor Total: R$ {ValorTotal: F2}";
-    return resultado
+    return resultado;
     }
 }
